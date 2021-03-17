@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+
+		<!-- Bootstrap -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+			crossorigin="anonymous"
+		/>
+
+		<!-- Fonts -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,400&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+			rel="stylesheet"
+		/>
+
+		<!-- CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="reset.css" />
+
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<body>
+		<nav class="main-nav position-fixed">
+			<a class="d-block text-center" href="#">
+				<img class="nav-logo" src="images/logo.png" alt="" />
+			</a>
+			<ul class="nav flex-column">
+				<li class="nav-item active">
+					<a href="#" class="nav-link">
+						<i class="nav-icon fas fa-digital-tachograph"></i>
+						Dashboard
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">
+						<i class="nav-icon fas fa-user"></i>
+						Profiles
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">
+						<i class="nav-icon fas fa-user-friends"></i>
+						Segmentation
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">
+						<i class="nav-icon fab fa-cloudflare"></i>
+						Marketing tool
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">
+						<i class="nav-icon fas fa-link"></i>
+						Collect management
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">
+						<i class="nav-icon fas fa-cog"></i>
+						Users management
+					</a>
+				</li>
+			</ul>
+		</nav>
+
+		<header class="main-header d-flex position-fixed justify-content-between">
+			<div class="left_header d-flex align-items-center">
+				<div class="ham-container me-3" onclick="headerHam(this)">
+					<div class="bar1"></div>
+					<div class="bar2"></div>
+					<div class="bar3"></div>
+				</div>
+				<div class="form-check form-switch">
+					<input class="form-check-input" type="checkbox" />
+				</div>
+			</div>
+			<div class="right-header d-flex align-items-center">
+				<a href="#" class="clock"><i class="fas fa-tachometer-alt"></i></a>
+				<a href="#" class="account d-flex m-2 ms-4">
+					<div class="text-end me-2 my-auto">
+						<h6 class="account__name">danhpc6</h6>
+						<p class="account__description">Tech News - Executive</p>
+					</div>
+					<img src="images/avatar.png" class="account__avatar"></img>
+				</a>
+			</div>
+		</header>
+
+		<main class="main-content">
+			<div class="container-fluid p-2">
+				<div class="section d-flex justify-content-between">
+					<div>
+						<h5 class="title">Hi, welcome back !</h5>
+						<p class="secondary">Dashboard for business side</p>
+					</div>
+					<div class="d-flex">
+						<div>
+							<h6 class="secondary mb-2">
+								Audience revernue
+								<i class="fas fa-question-circle"></i>
+							</h6>
+							<p class="fw-bold">17,577,480,434 VND</p>
+						</div>
+						<div class="ms-5">
+							<h6 class="secondary mb-2">
+								Audience revernue
+								<i class="fas fa-question-circle"></i>
+							</h6>
+							<p class="fw-bold">N/A</p>
+						</div>
+					</div>
+				</div>
+				<div class="row g-2">
+					<div class="col-md-3">
+						<div class="section d-flex justify-content-between">
+							<div>
+								<h6 class="title">
+									Unique Profile
+									<i class="fas fa-question-circle"></i>
+								</h6>
+								<p class="number">88,832,329</p>
+								<p class="green percent">(+0.24%)</p>
+								<p class="secondary">Analycs for all life time</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="section d-flex justify-content-between">
+							<div>
+								<h6 class="title">
+									Unique Profile
+									<i class="fas fa-question-circle"></i>
+								</h6>
+								<p class="number">88,832,329</p>
+								<p class="green percent">(+0.24%)</p>
+								<p class="secondary">Analycs for all life time</p>
+							</div>
+							<img class="progess-img" src="images/progress.png" alt="">
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="section d-flex justify-content-between">
+							<div>
+								<h6 class="title">
+									Unique Profile
+									<i class="fas fa-question-circle"></i>
+								</h6>
+								<p class="number">88,832,329</p>
+								<p class="red percent">(+0.24%)</p>
+								<p class="secondary">Analycs for all life time</p>
+							</div>
+							<img class="progess-img" src="images/progress.png" alt="">
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="section d-flex justify-content-between">
+							<div>
+								<h6 class="title">
+									Unique Profile
+									<i class="fas fa-question-circle"></i>
+								</h6>
+								<p class="number">88,832,329</p>
+								<p class="green percent">(+0.24%)</p>
+								<p class="secondary">Analycs for all life time</p>
+							</div>
+							<img class="progess-img" src="images/progress.png" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="row g-2">
+					<div class="col-md-8">
+						<div class="section section-border">
+							<div class="title-wraper">
+								<div class="title">
+									Profile active
+									<i class="fas fa-question-circle"></i>
+								</div>
+								<div class="buttons-group btn-group" role="group" aria-label="Basic radio toggle button group">
+									<input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+									<label class="btn btn-outline-primary" for="btnradio1">Day</label>
+
+									<input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+									<label class="btn btn-outline-primary" for="btnradio2">Week</label>
+
+									<input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+									<label class="btn btn-outline-primary" for="btnradio3">Month</label>
+								</div>
+							</div>
+							<div class="info">
+								<h6 class="sub-title mb-3">Last 30 days</h6>
+								<div class="row">
+									<div class="col-md-3">
+										<h6 class="sub-title">
+											All
+											<i class="fas fa-question-circle"></i>
+										</h6>
+										<p class="number">37.577.014</p>
+									</div>
+									<div class="col-md-3">
+										<h6 class="sub-title">
+											All
+											<i class="fas fa-question-circle"></i>
+										</h6>
+										<p class="number">37.577.014</p>
+									</div>
+									<div class="col-md-6">
+										<h6 class="sub-title">
+											All
+											<i class="fas fa-question-circle"></i>
+										</h6>
+										<p class="number">37.577.014</p>
+									</div>
+								</div>
+								<img class="w-100 mt-3" src="images/chart.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="section section-border">
+							<div class="title-wraper">
+								<div class="title">
+									Audience funnel
+									<i class="fas fa-question-circle"></i>
+								</div>
+							</div>
+							<img src="images/chart-2.png" alt="" class="w-100 mt-2">
+						</div>
+					</div>
+				</div>
+				<div class="row g-2">
+					<div class="col-md-8">
+						<div class="row g-2">
+							<div class="col-md-6">
+								<div class="section">
+									<div class="title">
+										New VNE Profile
+										<i class="fas fa-question-circle"></i>
+									</div>
+									<div class="d-flex align-items-center">
+										<div class="number me-2">175,867</div>
+										<i class="green mb-2 me-2 fas fa-expand-alt"></i>
+										<h6 class="sub-title mb-2">(Last 30 days)</h6>
+									</div>
+									<img class="w-100" src="images/chart-3.png" alt="">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="section">
+									<div class="title">
+										New VNE Profile
+										<i class="fas fa-question-circle"></i>
+									</div>
+									<div class="d-flex align-items-center">
+										<div class="number me-2">175,867</div>
+										<i class="green mb-2 me-2 fas fa-expand-alt"></i>
+										<h6 class="sub-title mb-2">(Last 30 days)</h6>
+									</div>
+									<img class="w-100" src="images/chart-3.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="row g-2">
+							<div class="col-md-12">
+								<div class="section section-border">
+									<div class="title-wraper">
+										<div class="title">
+											Data key collected
+											<i class="fas fa-question-circle"></i>
+										</div>
+									</div>
+									<div class="info mt-4">
+										<div class="row g-2 text-center">
+											<div class="col-md-4">
+												<img src="images/progress-2.png" alt="">
+												<h6 class="sub-title">MAID</h6>
+											</div>
+											<div class="col-md-4">
+												<img src="images/progress-2.png" alt="">
+												<h6 class="sub-title">MAID</h6>
+											</div>
+											<div class="col-md-4">
+												<img src="images/progress-2.png" alt="">
+												<h6 class="sub-title">MAID</h6>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="section section-border">
+							<div class="title-wraper">
+								<div class="title">
+									Top LifeTime Value
+									<i class="fas fa-question-circle"></i>
+								</div>
+							</div>
+							<div class="info p-2">
+								<ul class="lifetime">
+									<li class="lifetime--item d-flex align-items-center">
+										<img class="avatar" src="images/avatar.png" alt="">
+										<div class="lifetime--info">
+											<div class="name">anhtq10@gpt.com.vn</div>
+											<a href="#" class="tag tag-blue">shop</a>
+										</div>
+										<div class="price">98,283,934 VND</div>
+									</li>
+									<li class="lifetime--item d-flex align-items-center">
+										<img class="avatar" src="images/avatar.png" alt="">
+										<div class="lifetime--info">
+											<div class="name">anhtq10adasdasd@gpt.com.vn</div>
+											<a href="#" class="tag tag-green">VnE Marathon</a>
+										</div>
+										<div class="price">98,283,934 VND</div>
+									</li>
+									<li class="lifetime--item d-flex align-items-center">
+										<img class="avatar" src="images/avatar.png" alt="">
+										<div class="lifetime--info">
+											<div class="name">anhtq10@gpt.com.vn</div>
+											<a href="#" class="tag tag-blue">shop</a>
+										</div>
+										<div class="price">98,283,934 VND</div>
+									</li>
+									<li class="lifetime--item d-flex align-items-center">
+										<img class="avatar" src="images/avatar.png" alt="">
+										<div class="lifetime--info">
+											<div class="name">anhtq10adasdasd@gpt.com.vn</div>
+											<a href="#" class="tag tag-green">VnE Marathon</a>
+										</div>
+										<div class="price">98,283,934 VND</div>
+									</li>
+									<li class="lifetime--item d-flex align-items-center">
+										<img class="avatar" src="images/avatar.png" alt="">
+										<div class="lifetime--info">
+											<div class="name">anhtq10@gpt.com.vn</div>
+											<a href="#" class="tag tag-blue">shop</a>
+										</div>
+										<div class="price">98,283,934 VND</div>
+									</li>
+									<li class="lifetime--item d-flex align-items-center">
+										<img class="avatar" src="images/avatar.png" alt="">
+										<div class="lifetime--info">
+											<div class="name">anhtq10adasdasd@gpt.com.vn</div>
+											<a href="#" class="tag tag-green">VnE Marathon</a>
+										</div>
+										<div class="price">98,283,934 VND</div>
+									</li>
+									<li class="lifetime--item d-flex align-items-center">
+										<img class="avatar" src="images/avatar.png" alt="">
+										<div class="lifetime--info">
+											<div class="name">anhtq10@gpt.com.vn</div>
+											<a href="#" class="tag tag-blue">shop</a>
+										</div>
+										<div class="price">98,283,934 VND</div>
+									</li>
+									<li class="lifetime--item d-flex align-items-center">
+										<img class="avatar" src="images/avatar.png" alt="">
+										<div class="lifetime--info">
+											<div class="name">anhtq10adasdasd@gpt.com.vn</div>
+											<a href="#" class="tag tag-green">VnE Marathon</a>
+										</div>
+										<div class="price">98,283,934 VND</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row g-2">
+					<div class="col-md-4">
+						<div class="section">
+							<div class="title mb-4">
+								Est. Shop potential
+								<i class="fas fa-question-circle"></i>
+							</div>
+							<div class="d-flex justify-content-between align-items-center mb-4">
+								<div>
+									<div class="sub-title">Weekly Estimate</div>
+									<span class="fw-light">N/A</span>
+									<span class="small-description">/per week</span>
+								</div>
+								<p class="small-right">
+									<i class="me-2 fas fa-arrow-up"></i>
+									0%
+								</p>
+							</div>
+							<div class="row">
+								<div class="col-md-6 text-center border-right">
+									<h6 class="sub-title secondary mb-1">Est. Revenue cart abandonment</h6>
+									<p class="fs-5 mb-1">N/A</p>
+									<div class="d-flex justify-content-center">
+										<div class="small-right me-1">
+											<i class="fas fa-arrow-up"></i>
+											0%
+										</div>
+										<p class="sub-title secondary">increse</p>
+									</div>
+								</div>
+								<div class="col-md-6 text-center">
+									<h6 class="sub-title secondary mb-1">Est. Revenue cart abandonment</h6>
+									<p class="fs-5 mb-1">N/A</p>
+									<div class="d-flex justify-content-center">
+										<div class="small-right small-right-red me-1">
+											<i class="fas fa-arrow-down"></i>
+											0%
+										</div>
+										<p class="sub-title secondary">decrese</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="section">
+							<div class="title mb-4">
+								Est. Shop potential
+								<i class="fas fa-question-circle"></i>
+							</div>
+							<div class="d-flex justify-content-between align-items-center mb-4">
+								<div>
+									<div class="sub-title">Weekly Estimate</div>
+									<span class="fw-light">N/A</span>
+									<span class="small-description">/per week</span>
+								</div>
+								<p class="small-right">
+									<i class="me-2 fas fa-arrow-up"></i>
+									0%
+								</p>
+							</div>
+							<div class="row">
+								<div class="col-md-6 text-center border-right">
+									<h6 class="sub-title secondary mb-1">Est. Revenue cart abandonment</h6>
+									<p class="fs-5 mb-1">N/A</p>
+									<div class="d-flex justify-content-center">
+										<div class="small-right me-1">
+											<i class="fas fa-arrow-up"></i>
+											0%
+										</div>
+										<p class="sub-title secondary">increse</p>
+									</div>
+								</div>
+								<div class="col-md-6 text-center">
+									<h6 class="sub-title secondary mb-1">Est. Revenue cart abandonment</h6>
+									<p class="fs-5 mb-1">N/A</p>
+									<div class="d-flex justify-content-center">
+										<div class="small-right small-right-red me-1">
+											<i class="fas fa-arrow-down"></i>
+											0%
+										</div>
+										<p class="sub-title secondary">decrese</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="section">
+							<div class="title mb-4">
+								Est. Shop potential
+								<i class="fas fa-question-circle"></i>
+							</div>
+							<div class="d-flex justify-content-between align-items-center mb-4">
+								<div>
+									<div class="sub-title">Weekly Estimate</div>
+									<span class="fw-light">N/A</span>
+									<span class="small-description">/per week</span>
+								</div>
+								<p class="small-right">
+									<i class="me-2 fas fa-arrow-up"></i>
+									0%
+								</p>
+							</div>
+							<div class="row">
+								<div class="col-md-6 text-center border-right">
+									<h6 class="sub-title secondary mb-1">Est. Revenue cart abandonment</h6>
+									<p class="fs-5 mb-1">N/A</p>
+									<div class="d-flex justify-content-center">
+										<div class="small-right me-1">
+											<i class="fas fa-arrow-up"></i>
+											0%
+										</div>
+										<p class="sub-title secondary">increse</p>
+									</div>
+								</div>
+								<div class="col-md-6 text-center">
+									<h6 class="sub-title secondary mb-1">Est. Revenue cart abandonment</h6>
+									<p class="fs-5 mb-1">N/A</p>
+									<div class="d-flex justify-content-center">
+										<div class="small-right small-right-red me-1">
+											<i class="fas fa-arrow-down"></i>
+											0%
+										</div>
+										<p class="sub-title secondary">decrese</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row g-2">
+					<div class="col-md-4">
+						<div class="section section-border">
+							<div class="title-wraper">
+								<div class="title">
+									Income ranking
+									<i class="fas fa-question-circle"></i>
+								</div>
+							</div>
+							<div class="info">
+								<ul>
+									<li class="mb-4">
+										<div class="d-flex justify-content-between mb-2">
+											<div class="title fw-light">Class C</div>
+											<div class="title fw-light">N/A%</div>
+										</div>
+										<div class="progress" style="height: 3px;">
+											<div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</li>
+									<li class="mb-4">
+										<div class="d-flex justify-content-between mb-2">
+											<div class="title fw-light">Class C</div>
+											<div class="title fw-light">N/A%</div>
+										</div>
+										<div class="progress" style="height: 3px;">
+											<div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</li>
+									<li class="mb-4">
+										<div class="d-flex justify-content-between mb-2">
+											<div class="title fw-light">Class C</div>
+											<div class="title fw-light">N/A%</div>
+										</div>
+										<div class="progress" style="height: 3px;">
+											<div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</li>
+									<li class="mb-4">
+										<div class="d-flex justify-content-between mb-2">
+											<div class="title fw-light">Class C</div>
+											<div class="title fw-light">N/A%</div>
+										</div>
+										<div class="progress" style="height: 3px;">
+											<div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</li>
+									<li class="mb-4">
+										<div class="d-flex justify-content-between mb-2">
+											<div class="title fw-light">Class C</div>
+											<div class="title fw-light">N/A%</div>
+										</div>
+										<div class="progress" style="height: 3px;">
+											<div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</li>
+									<li class="mb-4">
+										<div class="d-flex justify-content-between mb-2">
+											<div class="title fw-light">Class C</div>
+											<div class="title fw-light">N/A%</div>
+										</div>
+										<div class="progress" style="height: 3px;">
+											<div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</li>
+									<li>
+										<div class="d-flex justify-content-between mb-2">
+											<div class="title fw-light">Class C</div>
+											<div class="title fw-light">N/A%</div>
+										</div>
+										<div class="progress" style="height: 3px;">
+											<div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-8">
+						<div class="section section-border">
+							<div class="title-wraper">
+								<div class="title">
+									Age - Gender
+									<i class="fas fa-question-circle"></i>
+								</div>
+							</div>
+							<div class="info">
+								<div class="row">
+									<div class="col-md-6">
+										<img class="d-block mx-auto mb-4" src="images/circle-chart.png" alt="">
+										<div class="d-flex justify-content-around">
+											<div class="male text-center">
+												<i class="fas fa-male mb-2"></i>
+												<div class="sub-title fw-light">Male</div>
+												<div class="fs-6">53,2%</div>
+											</div>
+											<div class="female text-center">
+												<i class="fas fa-female mb-2"></i>
+												<div class="sub-title fw-light">Female</div>
+												<div class="fs-6">53,2%</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<ul>
+											<li class="mb-4">
+												<div class="d-flex justify-content-between mb-2">
+													<div class="title fw-light">18-24</div>
+													<div class="title fw-light">0%</div>
+												</div>
+												<div class="progress" style="height: 3px;">
+													<div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+												</div>
+											</li>
+											<li class="mb-4">
+												<div class="d-flex justify-content-between mb-2">
+													<div class="title fw-light">25-34</div>
+													<div class="title fw-light">27%</div>
+												</div>
+												<div class="progress" style="height: 3px;">
+													<div class="progress-bar" role="progressbar" style="width: 27%;" aria-valuenow="27" aria-valuemin="0" aria-valuemax="100"></div>
+												</div>
+											</li>
+											<li class="mb-4">
+												<div class="d-flex justify-content-between mb-2">
+													<div class="title fw-light">35-44</div>
+													<div class="title fw-light">6%</div>
+												</div>
+												<div class="progress" style="height: 3px;">
+													<div class="progress-bar" role="progressbar" style="width: 6%;" aria-valuenow="6" aria-valuemin="0" aria-valuemax="100"></div>
+												</div>
+											</li>
+											<li class="mb-4">
+												<div class="d-flex justify-content-between mb-2">
+													<div class="title fw-light">18-24</div>
+													<div class="title fw-light">0%</div>
+												</div>
+												<div class="progress" style="height: 3px;">
+													<div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+												</div>
+											</li>
+											<li class="mb-4">
+												<div class="d-flex justify-content-between mb-2">
+													<div class="title fw-light">25-34</div>
+													<div class="title fw-light">27%</div>
+												</div>
+												<div class="progress" style="height: 3px;">
+													<div class="progress-bar" role="progressbar" style="width: 27%;" aria-valuenow="27" aria-valuemin="0" aria-valuemax="100"></div>
+												</div>
+											</li>
+											<li>
+												<div class="d-flex justify-content-between mb-2">
+													<div class="title fw-light">35-44</div>
+													<div class="title fw-light">6%</div>
+												</div>
+												<div class="progress" style="height: 3px;">
+													<div class="progress-bar" role="progressbar" style="width: 6%;" aria-valuenow="6" aria-valuemin="0" aria-valuemax="100"></div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row g-2">
+					<div class="col-md-4">
+						<div class="section section-border">
+							<div class="title-wraper">
+								<div class="title">
+									Top interest - Anonymous profile
+									<i class="fas fa-question-circle"></i>
+								</div>
+							</div>
+							<div class="info">
+								<ul>
+									<li class="mb-4">
+										<div class="d-flex justify-content-between mb-2">
+											<div class="title fw-light">18-24</div>
+											<div class="title fw-light">0%</div>
+										</div>
+										<div class="progress" style="height: 3px;">
+											<div class="progress-bar bg-green" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</li>
+									<li class="mb-4">
+										<div class="d-flex justify-content-between mb-2">
+											<div class="title fw-light">25-34</div>
+											<div class="title fw-light">27%</div>
+										</div>
+										<div class="progress" style="height: 3px;">
+											<div class="progress-bar bg-green" role="progressbar" style="width: 27%;" aria-valuenow="27" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</li>
+									<li class="mb-4">
+										<div class="d-flex justify-content-between mb-2">
+											<div class="title fw-light">35-44</div>
+											<div class="title fw-light">6%</div>
+										</div>
+										<div class="progress" style="height: 3px;">
+											<div class="progress-bar bg-green" role="progressbar" style="width: 6%;" aria-valuenow="6" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</li>
+									<li class="mb-4">
+										<div class="d-flex justify-content-between mb-2">
+											<div class="title fw-light">18-24</div>
+											<div class="title fw-light">0%</div>
+										</div>
+										<div class="progress" style="height: 3px;">
+											<div class="progress-bar bg-green" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</li>
+									<li class="mb-4">
+										<div class="d-flex justify-content-between mb-2">
+											<div class="title fw-light">35-44</div>
+											<div class="title fw-light">6%</div>
+										</div>
+										<div class="progress" style="height: 3px;">
+											<div class="progress-bar bg-green" role="progressbar" style="width: 6%;" aria-valuenow="6" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</li>
+									<li class="mb-4">
+										<div class="d-flex justify-content-between mb-2">
+											<div class="title fw-light">18-24</div>
+											<div class="title fw-light">0%</div>
+										</div>
+										<div class="progress" style="height: 3px;">
+											<div class="progress-bar bg-green" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</li>
+									<li class="mb-4">
+										<div class="d-flex justify-content-between mb-2">
+											<div class="title fw-light">25-34</div>
+											<div class="title fw-light">27%</div>
+										</div>
+										<div class="progress" style="height: 3px;">
+											<div class="progress-bar bg-green" role="progressbar" style="width: 27%;" aria-valuenow="27" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</li>
+									<li>
+										<div class="d-flex justify-content-between mb-2">
+											<div class="title fw-light">35-44</div>
+											<div class="title fw-light">6%</div>
+										</div>
+										<div class="progress" style="height: 3px;">
+											<div class="progress-bar bg-green" role="progressbar" style="width: 6%;" aria-valuenow="6" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="section section-border">
+							<div class="title-wraper">
+								<div class="title">
+									Top interest - Anonymous profile
+									<i class="fas fa-question-circle"></i>
+								</div>
+							</div>
+							<div class="info">
+								<ul>
+									<li class="mb-4">
+										<div class="d-flex justify-content-between mb-2">
+											<div class="title fw-light">18-24</div>
+											<div class="title fw-light">0%</div>
+										</div>
+										<div class="progress" style="height: 3px;">
+											<div class="progress-bar bg-green" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</li>
+									<li class="mb-4">
+										<div class="d-flex justify-content-between mb-2">
+											<div class="title fw-light">25-34</div>
+											<div class="title fw-light">27%</div>
+										</div>
+										<div class="progress" style="height: 3px;">
+											<div class="progress-bar bg-green" role="progressbar" style="width: 27%;" aria-valuenow="27" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</li>
+									<li class="mb-4">
+										<div class="d-flex justify-content-between mb-2">
+											<div class="title fw-light">35-44</div>
+											<div class="title fw-light">6%</div>
+										</div>
+										<div class="progress" style="height: 3px;">
+											<div class="progress-bar bg-green" role="progressbar" style="width: 6%;" aria-valuenow="6" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</li>
+									<li class="mb-4">
+										<div class="d-flex justify-content-between mb-2">
+											<div class="title fw-light">18-24</div>
+											<div class="title fw-light">0%</div>
+										</div>
+										<div class="progress" style="height: 3px;">
+											<div class="progress-bar bg-green" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</li>
+									<li class="mb-4">
+										<div class="d-flex justify-content-between mb-2">
+											<div class="title fw-light">35-44</div>
+											<div class="title fw-light">6%</div>
+										</div>
+										<div class="progress" style="height: 3px;">
+											<div class="progress-bar bg-green" role="progressbar" style="width: 6%;" aria-valuenow="6" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</li>
+									<li class="mb-4">
+										<div class="d-flex justify-content-between mb-2">
+											<div class="title fw-light">18-24</div>
+											<div class="title fw-light">0%</div>
+										</div>
+										<div class="progress" style="height: 3px;">
+											<div class="progress-bar bg-green" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</li>
+									<li class="mb-4">
+										<div class="d-flex justify-content-between mb-2">
+											<div class="title fw-light">25-34</div>
+											<div class="title fw-light">27%</div>
+										</div>
+										<div class="progress" style="height: 3px;">
+											<div class="progress-bar bg-green" role="progressbar" style="width: 27%;" aria-valuenow="27" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</li>
+									<li>
+										<div class="d-flex justify-content-between mb-2">
+											<div class="title fw-light">35-44</div>
+											<div class="title fw-light">6%</div>
+										</div>
+										<div class="progress" style="height: 3px;">
+											<div class="progress-bar bg-green" role="progressbar" style="width: 6%;" aria-valuenow="6" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="section section-border">
+							<div class="title-wraper">
+								<div class="title">
+									Deversified services
+									<i class="fas fa-question-circle"></i>
+								</div>
+							</div>
+							<div class="info">
+								<img class="w-100 p-4" src="images/circle-chart-2.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row g-2">
+					<div class="col-md-4 d-flex flex-column">
+						<div class="section section-border">
+							<div class="title-wraper">
+								<div class="title">
+									Platform
+									<i class="fas fa-question-circle"></i>
+								</div>
+							</div>
+							<div class="info">
+								<ul>
+									<li class="d-flex mb-3 justify-content-between align-items-center">
+										<p class="title">Web</p>
+										<div class="progress" style="height: 5px; width: 80%;">
+											<div class="progress-bar" role="progressbar" style="width: 99%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+										<p class="title fw-light">99%</p>
+									</li>
+									<li class="d-flex justify-content-between align-items-center">
+										<p class="title">App</p>
+										<div class="progress" style="height: 5px; width: 80%;">
+											<div class="progress-bar" role="progressbar" style="width: 1%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+										<p class="title fw-light">1%</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="section section-border">
+							<div class="title-wraper">
+								<div class="title">
+									Device type
+									<i class="fas fa-question-circle"></i>
+								</div>
+							</div>
+							<div class="info">
+								<ul>
+									<li class="d-flex mb-3 justify-content-between align-items-center">
+										<p class="title">Mobile</p>
+										<div class="progress" style="height: 5px; width: 80%;">
+											<div class="progress-bar bg-orange" role="progressbar" style="width: 78%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+										<p class="title fw-light">78%</p>
+									</li>
+									<li class="d-flex mb-3 justify-content-between align-items-center">
+										<p class="title">Desktop</p>
+										<div class="progress" style="height: 5px; width: 80%;">
+											<div class="progress-bar bg-orange" role="progressbar" style="width: 18%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+										<p class="title fw-light">18%</p>
+									</li>
+									<li class="d-flex mb-3 justify-content-between align-items-center">
+										<p class="title">Tablet</p>
+										<div class="progress" style="height: 5px; width: 80%;">
+											<div class="progress-bar bg-orange" role="progressbar" style="width: 2%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+										<p class="title fw-light">2%</p>
+									</li>
+									<li class="d-flex justify-content-between align-items-center">
+										<p class="title">Other</p>
+										<div class="progress" style="height: 5px; width: 80%;">
+											<div class="progress-bar bg-orange" role="progressbar" style="width: 2%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+										<p class="title fw-light">2%</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="section section-border">
+							<div class="title-wraper">
+								<div class="title">
+									Operating systems
+									<i class="fas fa-question-circle"></i>
+								</div>
+							</div>
+							<div class="info">
+								<img class="w-100 px-5" src="images/circle-chart-3.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="section section-border">
+							<div class="title-wraper">
+								<div class="title">
+									Browser
+									<i class="fas fa-question-circle"></i>
+								</div>
+							</div>
+							<div class="info p-3">
+								<ul class="browser">
+									<li class="d-flex mb-4 align-items-center justify-content-between">
+										<div class="d-flex">
+											<div class="browser-img me-1"><img src="images/chrome.png" alt=""></div>
+											<h6 class="title">Chrome</h6>
+										</div>
+										<div class="d-flex">
+											<p class="title fw-light">50%</p>
+											<p class="small-right small-right-red">
+												<i class="fas fa-arrow-down"></i> -2%
+											</p>
+										</div>
+									</li>
+									<li class="d-flex mb-4 align-items-center justify-content-between">
+										<div class="d-flex">
+											<div class="browser-img me-1"><img src="images/chrome.png" alt=""></div>
+											<h6 class="title">Chrome</h6>
+										</div>
+										<div class="d-flex">
+											<p class="title fw-light">50%</p>
+											<p class="small-right small-right-red">
+												<i class="fas fa-arrow-down"></i> -2%
+											</p>
+										</div>
+									</li>
+									<li class="d-flex mb-4 align-items-center justify-content-between">
+										<div class="d-flex">
+											<div class="browser-img me-1"><img src="images/chrome.png" alt=""></div>
+											<h6 class="title">Chrome</h6>
+										</div>
+										<div class="d-flex">
+											<p class="title fw-light">50%</p>
+											<p class="small-right small-right-red">
+												<i class="fas fa-arrow-down"></i> -2%
+											</p>
+										</div>
+									</li>
+									<li class="d-flex mb-4 align-items-center justify-content-between">
+										<div class="d-flex">
+											<div class="browser-img me-1"><img src="images/chrome.png" alt=""></div>
+											<h6 class="title">Chrome</h6>
+										</div>
+										<div class="d-flex">
+											<p class="title fw-light">50%</p>
+											<p class="small-right small-right-red">
+												<i class="fas fa-arrow-down"></i> -2%
+											</p>
+										</div>
+									</li>
+									<li class="d-flex mb-4 align-items-center justify-content-between">
+										<div class="d-flex">
+											<div class="browser-img me-1"><img src="images/chrome.png" alt=""></div>
+											<h6 class="title">Chrome</h6>
+										</div>
+										<div class="d-flex">
+											<p class="title fw-light">50%</p>
+											<p class="small-right small-right-red">
+												<i class="fas fa-arrow-down"></i> -2%
+											</p>
+										</div>
+									</li>
+									<li class="d-flex align-items-center justify-content-between">
+										<div class="d-flex">
+											<div class="browser-img me-1"></div>
+											<h6 class="title">Other</h6>
+										</div>
+										<div class="d-flex">
+											<p class="title fw-light">50%</p>
+											<p class="small-right">
+												<i class="fas fa-arrow-up"></i> 0%
+											</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<!-- Bootstrap -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+			integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+			integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+			crossorigin="anonymous"
+		></script>
+
+		<!-- Custom JS -->
+		<script src="main.js"></script>
+	</body>
+</html>
