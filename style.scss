@@ -6,7 +6,7 @@ $green-color: #359d6f;
 $red-color: #e0121b;
 $border-color: rgba(
 	$color: $secondary-color,
-	$alpha: 0.2,
+	$alpha: 0.15,
 );
 
 * {
@@ -59,6 +59,7 @@ body {
 	padding: 26px;
 	margin-bottom: 7px;
 	height: calc(100% - 7px);
+	border: 1px solid $border-color;
 	.title {
 		font-size: 12px;
 		margin-bottom: 10px;
@@ -151,6 +152,7 @@ body {
 	top: 0;
 	left: 0;
 	background-color: $primary-color;
+	border-right: 1px solid $border-color;
 }
 
 .nav {
@@ -187,6 +189,7 @@ body {
 	width: calc(100% - 190px);
 	background-color: $primary-color;
 	padding: 0 5px;
+	border-bottom: 1px solid $border-color;
 }
 
 .clock {
@@ -339,6 +342,30 @@ body {
 	.copyright {
 		font-size: 11px;
 		color: $secondary-color;
+	}
+}
+
+.progress {
+	background-color: $border-color;
+}
+
+.platform-list {
+	.title {
+		width: 40px;
+	}
+	.title.fw-light {
+		width: 40px;
+		text-align: right;
+	}
+}
+
+.device-list {
+	.title {
+		width: 100px;
+	}
+	.title.fw-light {
+		width: 40px;
+		text-align: right;
 	}
 }
 
