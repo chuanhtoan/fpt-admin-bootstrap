@@ -4,6 +4,10 @@ $background-color: #1e2340;
 $text-color: #0a76fb;
 $green-color: #359d6f;
 $red-color: #e0121b;
+$border-color: rgba(
+	$color: $secondary-color,
+	$alpha: 0.2,
+);
 
 * {
 	color: white;
@@ -84,7 +88,7 @@ body {
 		.title-wraper {
 			height: 60px;
 			padding: 15px 22px;
-			border-bottom: 1px solid rgba($color: $secondary-color, $alpha: 0.2);
+			border-bottom: 1px solid $border-color;
 			display: flex;
 			justify-content: space-between;
 			.buttons-group {
@@ -92,7 +96,8 @@ body {
 				label {
 					color: white;
 					font-size: 10px;
-					border: none;
+					border-color: $border-color;
+					border-radius: 0;
 				}
 			}
 		}
@@ -184,6 +189,10 @@ body {
 	padding: 0 5px;
 }
 
+.clock {
+	font-size: 12px;
+}
+
 .account {
 	font-size: 10px;
 	&__name {
@@ -269,7 +278,7 @@ body {
 }
 
 .border-right {
-	border-right: 1px solid rgba($color: $secondary-color, $alpha: 0.2);
+	border-right: 1px solid $border-color;
 }
 
 .browser {
@@ -283,5 +292,75 @@ body {
 	.small-right {
 		width: 30px;
 		margin-left: 30px;
+	}
+}
+
+.row-multi {
+	height: calc(100% - 7px);
+}
+
+.btn-black {
+	background-color: #292929;
+	padding: 1px 3px;
+	font-size: 10px;
+	text-align: center;
+	margin-bottom: 3px;
+}
+
+.table,
+.table th,
+.table td {
+	border-collapse: collapse;
+	border: 1px solid $border-color;
+}
+
+.table td {
+	padding: 12px;
+}
+
+.map {
+	// height: 230px;
+	width: 100%;
+	img {
+		width: 100%;
+	}
+}
+
+.main-footer {
+	background-color: $primary-color;
+	margin-left: 190px;
+	height: 34px;
+	// width: calc(100% - 190px);
+	padding: 0 15px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	.copyright {
+		font-size: 11px;
+		color: $secondary-color;
+	}
+}
+
+.wrap-content {
+	display: flex;
+	flex-direction: column;
+}
+
+@media all and (max-width: 1024px) {
+	.wrap-content {
+		flex-direction: row;
+		.section {
+			width: 100%;
+			&:first-child {
+				margin-right: 7px;
+			}
+		}
+	}
+}
+
+@media all and (max-width: 768px) {
+	.wrap-content {
+		flex-direction: column;
 	}
 }
