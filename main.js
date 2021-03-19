@@ -15,3 +15,19 @@ function headerHam(x) {
 		document.querySelector('.main-content').classList.add('w-100')
 	}
 }
+
+document.querySelector('#bg-change').addEventListener('change', (e) => {
+	if (e.currentTarget.checked) {
+		document.querySelector('.main-nav').style.background = 'white'
+		document.querySelector('.main-header').style.background = 'white'
+		document.querySelectorAll('.section').forEach((item) => {
+			item.style.background = 'white'
+		})
+	} else {
+		document.querySelector('.main-nav').style.background = '#282D4D'
+		document.querySelector('.main-header').style.background = '#282D4D'
+		document.querySelectorAll('.section').forEach((item) => {
+			item.style.background = '#282D4D'
+		})
+	}
+})
