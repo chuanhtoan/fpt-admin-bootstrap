@@ -30,8 +30,8 @@ body {
 }
 
 .change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-3px, 5px);
-  transform: rotate(-45deg) translate(-3px, 5px);
+  -webkit-transform: rotate(-45deg) translate(-3px, 2px);
+  transform: rotate(-45deg) translate(-3px, 2px);
 }
 
 .change .bar2 {
@@ -39,8 +39,8 @@ body {
 }
 
 .change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-4px, -5px);
-  transform: rotate(45deg) translate(-4px, -5px);
+  -webkit-transform: rotate(45deg) translate(-4px, -3px);
+  transform: rotate(45deg) translate(-4px, -3px);
 }
 
 .section {
@@ -159,6 +159,10 @@ body {
   left: 0;
   background-color: #282d4d;
   border-right: 1px solid rgba(150, 150, 150, 0.15);
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: all ease 0.25s;
+  transition: all ease 0.25s;
 }
 
 .nav-logo {
@@ -198,6 +202,8 @@ body {
   background-color: #282d4d;
   padding: 0 5px;
   border-bottom: 1px solid rgba(150, 150, 150, 0.15);
+  -webkit-transition: all ease 0.25s;
+  transition: all ease 0.25s;
 }
 
 .clock {
@@ -219,6 +225,8 @@ body {
 .main-content {
   padding-top: 70px;
   margin-left: 190px;
+  -webkit-transition: all ease 0.25s;
+  transition: all ease 0.25s;
 }
 
 .main-content .container-fluid {
@@ -427,4 +435,9 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
 }
