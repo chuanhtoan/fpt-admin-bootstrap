@@ -415,8 +415,6 @@ body {
 		height: 0px;
 		position: relative;
 		width: 40px;
-	}
-	& > label {
 		&::before {
 			background: rgb(255, 255, 255);
 			box-shadow: inset 0px 0px 10px rgba(255, 255, 255, 0.5);
