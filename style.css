@@ -202,6 +202,7 @@ body {
   background-color: #282d4d;
   padding: 0 5px;
   border-bottom: 1px solid rgba(150, 150, 150, 0.15);
+  z-index: 999;
   -webkit-transition: all ease 0.25s;
   transition: all ease 0.25s;
 }
