@@ -19,11 +19,12 @@ function headerHam(x) {
 }
 
 document.querySelector('#bg-change').addEventListener('change', (e) => {
+	const lightColor = '#ccc'
 	if (e.currentTarget.checked) {
-		document.querySelector('.main-nav').style.background = 'white'
-		document.querySelector('.main-header').style.background = 'white'
+		document.querySelector('.main-nav').style.background = lightColor
+		document.querySelector('.main-header').style.background = lightColor
 		document.querySelectorAll('.section').forEach((item) => {
-			item.style.background = 'white'
+			item.style.background = lightColor
 		})
 	} else {
 		document.querySelector('.main-nav').style.background = '#282D4D'
