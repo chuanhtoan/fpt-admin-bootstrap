@@ -6,6 +6,7 @@ function headerHam(x) {
 		document.querySelector('.main-header').classList.remove('w-100')
 		document.querySelector('.main-content').classList.remove('ms-0')
 		document.querySelector('.main-content').classList.remove('w-100')
+		document.querySelector('.main-footer').classList.remove('ms-0')
 	} else {
 		document.querySelector('.ham-container').classList.add('change')
 		document.querySelector('.main-nav').classList.add('hidden')
@@ -13,6 +14,7 @@ function headerHam(x) {
 		document.querySelector('.main-header').classList.add('w-100')
 		document.querySelector('.main-content').classList.add('ms-0')
 		document.querySelector('.main-content').classList.add('w-100')
+		document.querySelector('.main-footer').classList.add('ms-0')
 	}
 }
 
